@@ -1,24 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import {FieldList, Inject, PivotViewComponent, CalculatedField} from '@syncfusion/ej2-react-pivotview'
+// import {pivotData} from './data';
 import './App.css';
-
 function App() {
+        const [pivotData, setPivotData] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:3001/') // Adjust the URL as needed
+            .then(response => response.json())
+            .then(data => setPivotData(data))
+            .catch(error => console.error('Error fetching data:', error));
+    }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+
+        <PivotViewComponent
+        dataSourceSettings={{
+            dataSource: pivotData,
+            values: [
+                {name: "Sold",caption:"Units Sold"},
+                {name: "Amount" , caption: "Sold Amount"},
+                {name: "Total", caption: "Total Units", type: "CalculatedField"}
+            ],
+            rows: [
+                {name: "Country"},
+                {name: "Products"},
+
+            ],
+            columns: [
+                {name: "Year"},
+                {name: "Quarter"}
+            ],
+
+            calculatedFieldSettings: [{
+                name: "Total",
+                formula: '"Sum(Amount)"+"Sum(Sold)"'
+            }]
+        }}
+
+        showFieldList={true}
+        allowCalculatedField={true}
+        height={'500'}
+        width={'1500'}
         >
-          Learn React
-        </a>
-      </header>
+           <Inject services={[FieldList]}></Inject>
+        </PivotViewComponent>
     </div>
   );
 }
