@@ -1,1202 +1,1432 @@
 [
   {
-    "Sold": 31,
-    "Amount": 52059,
-    "Country": "Germany",
-    "Products": "Road Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 30,
-    "Amount": 135868,
-    "Country": "France",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 28,
-    "Amount": 91617,
-    "Country": "United States",
-    "Products": "Road Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 97,
-    "Amount": 127796,
-    "Country": "France",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 35,
-    "Amount": 94558,
-    "Country": "France",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 70,
-    "Amount": 127099,
-    "Country": "United Kingdom",
-    "Products": "Road Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 30,
-    "Amount": 100805,
-    "Country": "United States",
-    "Products": "Touring Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 86,
-    "Amount": 148238,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 93,
-    "Amount": 101875,
-    "Country": "Germany",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 58,
-    "Amount": 103528,
-    "Country": "United States",
-    "Products": "Road Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 53,
-    "Amount": 35991,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 13,
-    "Amount": 129028,
-    "Country": "France",
-    "Products": "Road Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 84,
-    "Amount": 40136,
-    "Country": "France",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 42,
-    "Amount": 146980,
-    "Country": "Germany",
-    "Products": "Road Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 78,
-    "Amount": 78345,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 23,
-    "Amount": 68917,
-    "Country": "United Kingdom",
-    "Products": "Touring Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 95,
-    "Amount": 34471,
-    "Country": "United Kingdom",
-    "Products": "Touring Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 21,
-    "Amount": 32515,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 12,
-    "Amount": 146736,
-    "Country": "United Kingdom",
-    "Products": "Touring Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 49,
-    "Amount": 98232,
-    "Country": "United States",
-    "Products": "Touring Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 59,
-    "Amount": 63430,
-    "Country": "France",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 29,
-    "Amount": 149196,
-    "Country": "Germany",
-    "Products": "Touring Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 58,
-    "Amount": 29847,
-    "Country": "Germany",
-    "Products": "Road Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 25,
-    "Amount": 157230,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 66,
-    "Amount": 141380,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 90,
-    "Amount": 112776,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 44,
-    "Amount": 66694,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 100,
-    "Amount": 107055,
-    "Country": "Germany",
-    "Products": "Touring Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 61,
-    "Amount": 150769,
-    "Country": "United States",
-    "Products": "Road Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 84,
-    "Amount": 46103,
-    "Country": "United States",
-    "Products": "Road Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 91,
-    "Amount": 117548,
-    "Country": "United Kingdom",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 89,
-    "Amount": 128270,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 81,
-    "Amount": 27922,
-    "Country": "United Kingdom",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 33,
-    "Amount": 23134,
-    "Country": "Germany",
-    "Products": "Touring Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 79,
-    "Amount": 49181,
-    "Country": "United States",
-    "Products": "Road Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 92,
-    "Amount": 82038,
-    "Country": "France",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 46,
-    "Amount": 48999,
-    "Country": "France",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 91,
-    "Amount": 92858,
-    "Country": "Germany",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 28,
-    "Amount": 69260,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 73,
-    "Amount": 108612,
-    "Country": "United Kingdom",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 42,
-    "Amount": 157978,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 53,
-    "Amount": 143032,
-    "Country": "United Kingdom",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 75,
-    "Amount": 141510,
-    "Country": "United Kingdom",
-    "Products": "Touring Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 83,
-    "Amount": 90378,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 98,
-    "Amount": 49572,
-    "Country": "Germany",
-    "Products": "Road Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 33,
-    "Amount": 99853,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 51,
-    "Amount": 104626,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 80,
-    "Amount": 92607,
-    "Country": "United Kingdom",
-    "Products": "Touring Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q4"
-  },
-  {
     "Sold": 62,
-    "Amount": 159397,
+    "Amount": 46386,
     "Country": "France",
-    "Products": "Road Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 33,
-    "Amount": 44661,
-    "Country": "United Kingdom",
-    "Products": "Mountain Bikes",
+    "Products": "Hybrid Bikes",
     "Year": "FY 2018",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 45,
-    "Amount": 50850,
-    "Country": "United Kingdom",
-    "Products": "Touring Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 53,
-    "Amount": 51601,
-    "Country": "Germany",
-    "Products": "Road Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 29,
-    "Amount": 49740,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 83,
-    "Amount": 35943,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 93,
-    "Amount": 135327,
-    "Country": "United Kingdom",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 94,
-    "Amount": 119506,
-    "Country": "Germany",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 25,
-    "Amount": 66737,
-    "Country": "United Kingdom",
-    "Products": "Touring Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 72,
-    "Amount": 120710,
-    "Country": "Germany",
-    "Products": "Touring Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 86,
-    "Amount": 39101,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 14,
-    "Amount": 132748,
-    "Country": "United Kingdom",
-    "Products": "Touring Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 30,
-    "Amount": 73694,
-    "Country": "Germany",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 69,
-    "Amount": 129579,
-    "Country": "Germany",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 58,
-    "Amount": 24806,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 29,
-    "Amount": 20493,
-    "Country": "Germany",
-    "Products": "Road Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 33,
-    "Amount": 21615,
-    "Country": "United Kingdom",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 63,
-    "Amount": 103107,
-    "Country": "Germany",
-    "Products": "Road Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 31,
-    "Amount": 29169,
-    "Country": "United Kingdom",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 88,
-    "Amount": 129328,
-    "Country": "United Kingdom",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 23,
-    "Amount": 21694,
-    "Country": "United States",
-    "Products": "Touring Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 88,
-    "Amount": 20431,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 58,
-    "Amount": 127451,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 35,
-    "Amount": 125438,
-    "Country": "United States",
-    "Products": "Touring Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 94,
-    "Amount": 108572,
-    "Country": "France",
-    "Products": "Road Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 74,
-    "Amount": 105847,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 23,
-    "Amount": 104832,
-    "Country": "France",
-    "Products": "Road Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 56,
-    "Amount": 105788,
-    "Country": "France",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 12,
-    "Amount": 139453,
-    "Country": "France",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 93,
-    "Amount": 92748,
-    "Country": "United Kingdom",
-    "Products": "Road Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 62,
-    "Amount": 114618,
-    "Country": "Germany",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 10,
-    "Amount": 67191,
-    "Country": "France",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 68,
-    "Amount": 72312,
-    "Country": "Germany",
-    "Products": "Touring Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 68,
-    "Amount": 73959,
-    "Country": "France",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 34,
-    "Amount": 157499,
-    "Country": "United Kingdom",
-    "Products": "Road Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 75,
-    "Amount": 89580,
-    "Country": "United Kingdom",
-    "Products": "Touring Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 25,
-    "Amount": 147766,
-    "Country": "United Kingdom",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 56,
-    "Amount": 42924,
-    "Country": "United States",
-    "Products": "Road Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 38,
-    "Amount": 27770,
-    "Country": "Germany",
-    "Products": "Road Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 79,
-    "Amount": 151027,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 41,
-    "Amount": 117190,
-    "Country": "Germany",
-    "Products": "Road Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 85,
-    "Amount": 42533,
-    "Country": "United Kingdom",
-    "Products": "Road Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 81,
-    "Amount": 153779,
-    "Country": "United States",
-    "Products": "Touring Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 67,
-    "Amount": 113866,
-    "Country": "France",
-    "Products": "Road Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 35,
-    "Amount": 147372,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 26,
-    "Amount": 107930,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 42,
-    "Amount": 110462,
-    "Country": "France",
-    "Products": "Road Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 14,
-    "Amount": 150011,
-    "Country": "United Kingdom",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 47,
-    "Amount": 59012,
-    "Country": "Germany",
-    "Products": "Touring Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 35,
-    "Amount": 139381,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 26,
-    "Amount": 41375,
-    "Country": "United Kingdom",
-    "Products": "Road Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 52,
-    "Amount": 127938,
-    "Country": "United States",
-    "Products": "Touring Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 51,
-    "Amount": 145740,
-    "Country": "Germany",
-    "Products": "Touring Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 73,
-    "Amount": 61382,
-    "Country": "Germany",
-    "Products": "Road Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 48,
-    "Amount": 69568,
-    "Country": "Germany",
-    "Products": "Road Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 39,
-    "Amount": 76370,
-    "Country": "United Kingdom",
-    "Products": "Road Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 48,
-    "Amount": 43773,
-    "Country": "United States",
-    "Products": "Touring Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 24,
-    "Amount": 81276,
-    "Country": "Germany",
-    "Products": "Touring Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 57,
-    "Amount": 29516,
-    "Country": "Germany",
-    "Products": "Road Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 37,
-    "Amount": 106733,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 48,
-    "Amount": 153049,
-    "Country": "France",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 67,
-    "Amount": 149248,
-    "Country": "United States",
-    "Products": "Road Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 67,
-    "Amount": 66778,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 83,
-    "Amount": 70218,
-    "Country": "Germany",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 31,
-    "Amount": 75362,
-    "Country": "Germany",
-    "Products": "Road Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 48,
-    "Amount": 69958,
-    "Country": "Germany",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 27,
-    "Amount": 88781,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 68,
-    "Amount": 99369,
-    "Country": "United States",
-    "Products": "Road Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 21,
-    "Amount": 27809,
-    "Country": "Germany",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 45,
-    "Amount": 95782,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 44,
-    "Amount": 92924,
-    "Country": "United States",
-    "Products": "Touring Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 84,
-    "Amount": 135646,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 72,
-    "Amount": 137179,
-    "Country": "Germany",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 10,
-    "Amount": 69712,
-    "Country": "Germany",
-    "Products": "Road Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 94,
-    "Amount": 135354,
-    "Country": "United Kingdom",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 91,
-    "Amount": 108462,
-    "Country": "United States",
-    "Products": "Road Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 41,
-    "Amount": 80664,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 15,
-    "Amount": 93051,
-    "Country": "France",
-    "Products": "Road Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 32,
-    "Amount": 116037,
-    "Country": "United States",
-    "Products": "Road Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 33,
-    "Amount": 21538,
-    "Country": "United Kingdom",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 44,
-    "Amount": 42683,
-    "Country": "United Kingdom",
-    "Products": "Road Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 77,
-    "Amount": 156429,
-    "Country": "Germany",
-    "Products": "Touring Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q1"
-  },
-  {
-    "Sold": 13,
-    "Amount": 48658,
-    "Country": "United States",
-    "Products": "Touring Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 51,
-    "Amount": 34503,
-    "Country": "United States",
-    "Products": "Road Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 91,
-    "Amount": 141176,
-    "Country": "United States",
-    "Products": "Road Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 90,
-    "Amount": 65293,
-    "Country": "United States",
-    "Products": "Road Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 38,
-    "Amount": 142948,
-    "Country": "United States",
-    "Products": "Touring Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q1"
+    "Quarter": "Q2",
+    "State": "GM",
+    "Store": "Store B",
+    "Customer": "Customer A"
   },
   {
     "Sold": 50,
-    "Amount": 78527,
-    "Country": "United Kingdom",
-    "Products": "Mountain Bikes",
+    "Amount": 54227,
+    "Country": "Japan",
+    "Products": "Electric Bikes",
     "Year": "FY 2017",
-    "Quarter": "Q4"
+    "Quarter": "Q4",
+    "State": "SJ",
+    "Store": "Store D",
+    "Customer": "Customer E"
   },
   {
-    "Sold": 91,
-    "Amount": 88588,
-    "Country": "United Kingdom",
+    "Sold": 54,
+    "Amount": 49103,
+    "Country": "Canada",
     "Products": "Mountain Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 29,
-    "Amount": 66003,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 16,
-    "Amount": 142902,
-    "Country": "United States",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q3"
+    "Year": "FY 2019",
+    "Quarter": "Q1",
+    "State": "YY",
+    "Store": "Store E",
+    "Customer": "Customer A"
   },
   {
     "Sold": 94,
-    "Amount": 115799,
-    "Country": "United States",
-    "Products": "Road Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 79,
-    "Amount": 79124,
-    "Country": "Germany",
-    "Products": "Mountain Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q4"
-  },
-  {
-    "Sold": 76,
-    "Amount": 141669,
-    "Country": "Germany",
-    "Products": "Touring Bikes",
+    "Amount": 8144,
+    "Country": "Canada",
+    "Products": "Electric Bikes",
     "Year": "FY 2017",
-    "Quarter": "Q1"
+    "Quarter": "Q4",
+    "State": "GW",
+    "Store": "Store A",
+    "Customer": "Customer D"
   },
   {
-    "Sold": 71,
-    "Amount": 39229,
+    "Sold": 37,
+    "Amount": 12455,
+    "Country": "Japan",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q2",
+    "State": "SJ",
+    "Store": "Store E",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 30,
+    "Amount": 39083,
     "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q2"
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q2",
+    "State": "QK",
+    "Store": "Store B",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 22,
+    "Amount": 42664,
+    "Country": "Germany",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q3",
+    "State": "ET",
+    "Store": "Store E",
+    "Customer": "Customer A"
   },
   {
     "Sold": 61,
-    "Amount": 38735,
-    "Country": "United Kingdom",
-    "Products": "Touring Bikes",
+    "Amount": 88196,
+    "Country": "Japan",
+    "Products": "Hybrid Bikes",
     "Year": "FY 2018",
-    "Quarter": "Q4"
+    "Quarter": "Q2",
+    "State": "FU",
+    "Store": "Store D",
+    "Customer": "Customer C"
   },
   {
-    "Sold": 65,
-    "Amount": 40572,
-    "Country": "United States",
-    "Products": "Touring Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 67,
-    "Amount": 25737,
-    "Country": "United Kingdom",
-    "Products": "Touring Bikes",
-    "Year": "FY 2018",
-    "Quarter": "Q3"
-  },
-  {
-    "Sold": 57,
-    "Amount": 63197,
-    "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2015",
-    "Quarter": "Q2"
-  },
-  {
-    "Sold": 14,
-    "Amount": 80420,
-    "Country": "France",
-    "Products": "Road Bikes",
-    "Year": "FY 2017",
-    "Quarter": "Q2"
+    "Sold": 62,
+    "Amount": 79371,
+    "Country": "USA",
+    "Products": "Electric Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q4",
+    "State": "AG",
+    "Store": "Store E",
+    "Customer": "Customer E"
   },
   {
     "Sold": 15,
-    "Amount": 145816,
+    "Amount": 49800,
+    "Country": "Canada",
+    "Products": "Road Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q1",
+    "State": "RI",
+    "Store": "Store B",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 37,
+    "Amount": 63971,
+    "Country": "Canada",
+    "Products": "Road Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q1",
+    "State": "TV",
+    "Store": "Store D",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 93,
+    "Amount": 54355,
     "Country": "France",
-    "Products": "Touring Bikes",
-    "Year": "FY 2016",
-    "Quarter": "Q3"
+    "Products": "Road Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q2",
+    "State": "EE",
+    "Store": "Store D",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 12,
+    "Amount": 63618,
+    "Country": "Canada",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q1",
+    "State": "KN",
+    "Store": "Store B",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 27,
+    "Amount": 65183,
+    "Country": "Germany",
+    "Products": "Electric Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q4",
+    "State": "ZZ",
+    "Store": "Store D",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 74,
+    "Amount": 91672,
+    "Country": "Japan",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q2",
+    "State": "TW",
+    "Store": "Store B",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 79,
+    "Amount": 98574,
+    "Country": "Germany",
+    "Products": "Road Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q2",
+    "State": "AU",
+    "Store": "Store C",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 42,
+    "Amount": 13996,
+    "Country": "France",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q1",
+    "State": "MA",
+    "Store": "Store C",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 38,
+    "Amount": 3334,
+    "Country": "USA",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q1",
+    "State": "NW",
+    "Store": "Store E",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 91,
+    "Amount": 54194,
+    "Country": "USA",
+    "Products": "Electric Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q4",
+    "State": "XJ",
+    "Store": "Store A",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 25,
+    "Amount": 91627,
+    "Country": "Canada",
+    "Products": "Electric Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q1",
+    "State": "IZ",
+    "Store": "Store B",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 47,
+    "Amount": 77173,
+    "Country": "Germany",
+    "Products": "Road Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q1",
+    "State": "VG",
+    "Store": "Store E",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 49,
+    "Amount": 52286,
+    "Country": "Canada",
+    "Products": "Road Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q4",
+    "State": "WK",
+    "Store": "Store B",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 70,
+    "Amount": 27268,
+    "Country": "USA",
+    "Products": "Road Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q2",
+    "State": "ST",
+    "Store": "Store E",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 32,
+    "Amount": 3152,
+    "Country": "Germany",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q2",
+    "State": "VM",
+    "Store": "Store C",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 31,
+    "Amount": 50796,
+    "Country": "France",
+    "Products": "Road Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q2",
+    "State": "TY",
+    "Store": "Store B",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 39,
+    "Amount": 70986,
+    "Country": "USA",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q1",
+    "State": "YT",
+    "Store": "Store A",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 66,
+    "Amount": 89888,
+    "Country": "France",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q1",
+    "State": "QN",
+    "Store": "Store C",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 87,
+    "Amount": 26730,
+    "Country": "Japan",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q2",
+    "State": "CE",
+    "Store": "Store E",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 92,
+    "Amount": 5141,
+    "Country": "USA",
+    "Products": "Road Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q4",
+    "State": "KX",
+    "Store": "Store E",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 62,
+    "Amount": 68971,
+    "Country": "USA",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q3",
+    "State": "GV",
+    "Store": "Store C",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 38,
+    "Amount": 90469,
+    "Country": "France",
+    "Products": "Road Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q4",
+    "State": "RU",
+    "Store": "Store E",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 17,
+    "Amount": 55551,
+    "Country": "Germany",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q3",
+    "State": "QS",
+    "Store": "Store E",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 25,
+    "Amount": 13961,
+    "Country": "France",
+    "Products": "Road Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q4",
+    "State": "LW",
+    "Store": "Store E",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 62,
+    "Amount": 8964,
+    "Country": "France",
+    "Products": "Electric Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q4",
+    "State": "AS",
+    "Store": "Store E",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 12,
+    "Amount": 46311,
+    "Country": "France",
+    "Products": "Electric Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q3",
+    "State": "HZ",
+    "Store": "Store A",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 67,
+    "Amount": 54626,
+    "Country": "Japan",
+    "Products": "Electric Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q1",
+    "State": "QT",
+    "Store": "Store A",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 57,
+    "Amount": 23033,
+    "Country": "Germany",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q1",
+    "State": "ST",
+    "Store": "Store C",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 13,
+    "Amount": 20757,
+    "Country": "Germany",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q3",
+    "State": "OU",
+    "Store": "Store B",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 41,
+    "Amount": 39198,
+    "Country": "Japan",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q4",
+    "State": "QN",
+    "Store": "Store D",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 24,
+    "Amount": 26627,
+    "Country": "Japan",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q4",
+    "State": "BE",
+    "Store": "Store A",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 62,
+    "Amount": 36968,
+    "Country": "Canada",
+    "Products": "Road Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q2",
+    "State": "QG",
+    "Store": "Store E",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 98,
+    "Amount": 62031,
+    "Country": "France",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q4",
+    "State": "KM",
+    "Store": "Store E",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 91,
+    "Amount": 28265,
+    "Country": "USA",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q1",
+    "State": "MV",
+    "Store": "Store C",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 93,
+    "Amount": 26154,
+    "Country": "Germany",
+    "Products": "Electric Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q2",
+    "State": "FC",
+    "Store": "Store E",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 18,
+    "Amount": 34547,
+    "Country": "France",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q4",
+    "State": "YO",
+    "Store": "Store B",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 48,
+    "Amount": 17175,
+    "Country": "Japan",
+    "Products": "Road Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q1",
+    "State": "DM",
+    "Store": "Store E",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 88,
+    "Amount": 20150,
+    "Country": "France",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q2",
+    "State": "UI",
+    "Store": "Store B",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 93,
+    "Amount": 60643,
+    "Country": "Japan",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q4",
+    "State": "XK",
+    "Store": "Store A",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 37,
+    "Amount": 72964,
+    "Country": "Canada",
+    "Products": "Electric Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q3",
+    "State": "TP",
+    "Store": "Store C",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 48,
+    "Amount": 34867,
+    "Country": "Canada",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q2",
+    "State": "NI",
+    "Store": "Store E",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 82,
+    "Amount": 23686,
+    "Country": "France",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q4",
+    "State": "DV",
+    "Store": "Store E",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 29,
+    "Amount": 37316,
+    "Country": "Canada",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q2",
+    "State": "AW",
+    "Store": "Store D",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 51,
+    "Amount": 91066,
+    "Country": "USA",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q3",
+    "State": "GW",
+    "Store": "Store E",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 26,
+    "Amount": 32220,
+    "Country": "USA",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q2",
+    "State": "VX",
+    "Store": "Store E",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 75,
+    "Amount": 1688,
+    "Country": "USA",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q4",
+    "State": "FE",
+    "Store": "Store C",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 77,
+    "Amount": 69244,
+    "Country": "USA",
+    "Products": "Electric Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q4",
+    "State": "RW",
+    "Store": "Store A",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 39,
+    "Amount": 55210,
+    "Country": "Japan",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q4",
+    "State": "JM",
+    "Store": "Store B",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 51,
+    "Amount": 27774,
+    "Country": "France",
+    "Products": "Electric Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q4",
+    "State": "RX",
+    "Store": "Store B",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 38,
+    "Amount": 68489,
+    "Country": "Japan",
+    "Products": "Electric Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q3",
+    "State": "BS",
+    "Store": "Store A",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 32,
+    "Amount": 72119,
+    "Country": "Germany",
+    "Products": "Road Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q4",
+    "State": "AZ",
+    "Store": "Store C",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 19,
+    "Amount": 43457,
+    "Country": "USA",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q1",
+    "State": "BE",
+    "Store": "Store B",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 63,
+    "Amount": 71343,
+    "Country": "USA",
+    "Products": "Electric Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q1",
+    "State": "MC",
+    "Store": "Store B",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 61,
+    "Amount": 62453,
+    "Country": "USA",
+    "Products": "Electric Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q3",
+    "State": "PB",
+    "Store": "Store E",
+    "Customer": "Customer A"
   },
   {
     "Sold": 21,
-    "Amount": 23726,
-    "Country": "United States",
+    "Amount": 22987,
+    "Country": "France",
+    "Products": "Road Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q4",
+    "State": "ZL",
+    "Store": "Store D",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 78,
+    "Amount": 34626,
+    "Country": "Germany",
+    "Products": "Electric Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q4",
+    "State": "MC",
+    "Store": "Store B",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 63,
+    "Amount": 98520,
+    "Country": "Canada",
+    "Products": "Electric Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q4",
+    "State": "XY",
+    "Store": "Store A",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 50,
+    "Amount": 84718,
+    "Country": "France",
+    "Products": "Road Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q4",
+    "State": "TG",
+    "Store": "Store C",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 24,
+    "Amount": 63612,
+    "Country": "USA",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q4",
+    "State": "SE",
+    "Store": "Store C",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 86,
+    "Amount": 3173,
+    "Country": "France",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q4",
+    "State": "HX",
+    "Store": "Store C",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 62,
+    "Amount": 21091,
+    "Country": "USA",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q2",
+    "State": "KW",
+    "Store": "Store E",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 30,
+    "Amount": 64942,
+    "Country": "Canada",
+    "Products": "Electric Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q4",
+    "State": "OH",
+    "Store": "Store C",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 16,
+    "Amount": 92148,
+    "Country": "France",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q2",
+    "State": "OD",
+    "Store": "Store D",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 61,
+    "Amount": 79004,
+    "Country": "Germany",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q3",
+    "State": "SM",
+    "Store": "Store E",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 33,
+    "Amount": 6334,
+    "Country": "Japan",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q4",
+    "State": "TU",
+    "Store": "Store E",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 90,
+    "Amount": 50292,
+    "Country": "USA",
+    "Products": "Road Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q1",
+    "State": "BA",
+    "Store": "Store D",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 18,
+    "Amount": 84061,
+    "Country": "Germany",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q3",
+    "State": "IX",
+    "Store": "Store D",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 89,
+    "Amount": 18355,
+    "Country": "France",
+    "Products": "Road Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q2",
+    "State": "AE",
+    "Store": "Store C",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 67,
+    "Amount": 33888,
+    "Country": "France",
     "Products": "Mountain Bikes",
     "Year": "FY 2017",
-    "Quarter": "Q4"
+    "Quarter": "Q2",
+    "State": "BY",
+    "Store": "Store A",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 25,
+    "Amount": 97104,
+    "Country": "USA",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q3",
+    "State": "LT",
+    "Store": "Store C",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 57,
+    "Amount": 91917,
+    "Country": "Canada",
+    "Products": "Road Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q2",
+    "State": "WJ",
+    "Store": "Store C",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 56,
+    "Amount": 6284,
+    "Country": "Japan",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q2",
+    "State": "MO",
+    "Store": "Store A",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 34,
+    "Amount": 11308,
+    "Country": "USA",
+    "Products": "Road Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q2",
+    "State": "PV",
+    "Store": "Store E",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 58,
+    "Amount": 72606,
+    "Country": "Germany",
+    "Products": "Road Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q4",
+    "State": "XF",
+    "Store": "Store D",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 49,
+    "Amount": 46867,
+    "Country": "Japan",
+    "Products": "Electric Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q3",
+    "State": "LB",
+    "Store": "Store D",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 31,
+    "Amount": 46262,
+    "Country": "USA",
+    "Products": "Road Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q2",
+    "State": "ZY",
+    "Store": "Store E",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 54,
+    "Amount": 94698,
+    "Country": "Germany",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q4",
+    "State": "HX",
+    "Store": "Store C",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 16,
+    "Amount": 71816,
+    "Country": "Canada",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q1",
+    "State": "SV",
+    "Store": "Store A",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 30,
+    "Amount": 57476,
+    "Country": "USA",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q2",
+    "State": "XG",
+    "Store": "Store B",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 76,
+    "Amount": 50555,
+    "Country": "USA",
+    "Products": "Electric Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q3",
+    "State": "DN",
+    "Store": "Store E",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 12,
+    "Amount": 30596,
+    "Country": "Canada",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q3",
+    "State": "ON",
+    "Store": "Store E",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 34,
+    "Amount": 51775,
+    "Country": "Germany",
+    "Products": "Road Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q1",
+    "State": "RF",
+    "Store": "Store D",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 43,
+    "Amount": 29863,
+    "Country": "Japan",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q1",
+    "State": "DQ",
+    "Store": "Store B",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 47,
+    "Amount": 8274,
+    "Country": "Germany",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q3",
+    "State": "BZ",
+    "Store": "Store C",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 13,
+    "Amount": 30087,
+    "Country": "Canada",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q4",
+    "State": "EP",
+    "Store": "Store C",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 11,
+    "Amount": 38907,
+    "Country": "France",
+    "Products": "Electric Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q3",
+    "State": "TY",
+    "Store": "Store B",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 44,
+    "Amount": 44467,
+    "Country": "Canada",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q4",
+    "State": "KY",
+    "Store": "Store B",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 93,
+    "Amount": 71795,
+    "Country": "Germany",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q4",
+    "State": "BZ",
+    "Store": "Store D",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 34,
+    "Amount": 19958,
+    "Country": "USA",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q1",
+    "State": "CR",
+    "Store": "Store C",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 24,
+    "Amount": 67426,
+    "Country": "USA",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q3",
+    "State": "MQ",
+    "Store": "Store B",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 49,
+    "Amount": 47915,
+    "Country": "Canada",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q3",
+    "State": "GT",
+    "Store": "Store A",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 70,
+    "Amount": 97203,
+    "Country": "Japan",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q1",
+    "State": "PD",
+    "Store": "Store B",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 82,
+    "Amount": 46787,
+    "Country": "France",
+    "Products": "Road Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q1",
+    "State": "PC",
+    "Store": "Store A",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 95,
+    "Amount": 82851,
+    "Country": "Japan",
+    "Products": "Road Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q3",
+    "State": "KT",
+    "Store": "Store B",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 87,
+    "Amount": 15413,
+    "Country": "Canada",
+    "Products": "Road Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q2",
+    "State": "WK",
+    "Store": "Store E",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 17,
+    "Amount": 94646,
+    "Country": "Canada",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q2",
+    "State": "JK",
+    "Store": "Store B",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 50,
+    "Amount": 38673,
+    "Country": "France",
+    "Products": "Road Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q3",
+    "State": "NE",
+    "Store": "Store B",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 35,
+    "Amount": 18545,
+    "Country": "Japan",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q2",
+    "State": "WA",
+    "Store": "Store C",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 15,
+    "Amount": 78136,
+    "Country": "USA",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q1",
+    "State": "GM",
+    "Store": "Store B",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 80,
+    "Amount": 96908,
+    "Country": "Germany",
+    "Products": "Road Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q4",
+    "State": "QF",
+    "Store": "Store D",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 65,
+    "Amount": 57208,
+    "Country": "Canada",
+    "Products": "Road Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q3",
+    "State": "HE",
+    "Store": "Store E",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 21,
+    "Amount": 57052,
+    "Country": "France",
+    "Products": "Road Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q1",
+    "State": "TV",
+    "Store": "Store D",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 12,
+    "Amount": 77853,
+    "Country": "Germany",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q1",
+    "State": "ZC",
+    "Store": "Store E",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 54,
+    "Amount": 29863,
+    "Country": "Canada",
+    "Products": "Road Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q2",
+    "State": "YM",
+    "Store": "Store A",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 99,
+    "Amount": 1823,
+    "Country": "USA",
+    "Products": "Electric Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q2",
+    "State": "OT",
+    "Store": "Store A",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 41,
+    "Amount": 80236,
+    "Country": "Japan",
+    "Products": "Electric Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q1",
+    "State": "UG",
+    "Store": "Store B",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 32,
+    "Amount": 74303,
+    "Country": "Canada",
+    "Products": "Road Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q3",
+    "State": "TK",
+    "Store": "Store C",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 46,
+    "Amount": 23641,
+    "Country": "USA",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2018",
+    "Quarter": "Q4",
+    "State": "TZ",
+    "Store": "Store E",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 94,
+    "Amount": 43262,
+    "Country": "Japan",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q3",
+    "State": "OM",
+    "Store": "Store B",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 70,
+    "Amount": 51527,
+    "Country": "USA",
+    "Products": "Electric Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q2",
+    "State": "MX",
+    "Store": "Store A",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 26,
+    "Amount": 6122,
+    "Country": "USA",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q4",
+    "State": "SY",
+    "Store": "Store D",
+    "Customer": "Customer D"
+  },
+  {
+    "Sold": 75,
+    "Amount": 25526,
+    "Country": "Japan",
+    "Products": "Road Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q1",
+    "State": "TF",
+    "Store": "Store D",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 80,
+    "Amount": 25659,
+    "Country": "Germany",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q4",
+    "State": "XO",
+    "Store": "Store D",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 39,
+    "Amount": 42313,
+    "Country": "Japan",
+    "Products": "Road Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q3",
+    "State": "TL",
+    "Store": "Store A",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 36,
+    "Amount": 78108,
+    "Country": "Japan",
+    "Products": "Mountain Bikes",
+    "Year": "FY 2019",
+    "Quarter": "Q2",
+    "State": "SG",
+    "Store": "Store A",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 83,
+    "Amount": 81781,
+    "Country": "Japan",
+    "Products": "Electric Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q2",
+    "State": "WT",
+    "Store": "Store B",
+    "Customer": "Customer C"
+  },
+  {
+    "Sold": 35,
+    "Amount": 44332,
+    "Country": "Japan",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q3",
+    "State": "YQ",
+    "Store": "Store B",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 52,
+    "Amount": 9459,
+    "Country": "USA",
+    "Products": "Road Bikes",
+    "Year": "FY 2017",
+    "Quarter": "Q3",
+    "State": "MC",
+    "Store": "Store D",
+    "Customer": "Customer E"
+  },
+  {
+    "Sold": 56,
+    "Amount": 64205,
+    "Country": "Germany",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q1",
+    "State": "YS",
+    "Store": "Store D",
+    "Customer": "Customer A"
+  },
+  {
+    "Sold": 40,
+    "Amount": 21797,
+    "Country": "Germany",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q4",
+    "State": "TS",
+    "Store": "Store B",
+    "Customer": "Customer B"
+  },
+  {
+    "Sold": 46,
+    "Amount": 74567,
+    "Country": "Japan",
+    "Products": "Hybrid Bikes",
+    "Year": "FY 2020",
+    "Quarter": "Q1",
+    "State": "ZP",
+    "Store": "Store E",
+    "Customer": "Customer A"
   }
 ]

@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { PivotViewComponent, FieldList, Inject } from '@syncfusion/ej2-react-pivotview';
-import { CheckBoxComponent, ChangeEventArgs } from '@syncfusion/ej2-react-buttons';
+import { CheckBoxComponent } from '@syncfusion/ej2-react-buttons';
 import { enableRipple } from '@syncfusion/ej2-base';
 import './App.css';
 
@@ -9,16 +9,21 @@ enableRipple(true);
 const App = () => {
     const [pivotData, setPivotData] = useState([]);
     const [selectedDimensions, setSelectedDimensions] = useState<string[]>([]);
+    const [currentUrl, setCurrentUrl] = useState<string>('');
 
     // Create refs for each CheckBoxComponent
-    const yearRef = useRef<CheckBoxComponent>(null);
-    const quarterRef = useRef<CheckBoxComponent>(null);
+    const timeRef = useRef<CheckBoxComponent>(null);
     const productsRef = useRef<CheckBoxComponent>(null);
-    const countryRef = useRef<CheckBoxComponent>(null);
-
+    const storeRef = useRef<CheckBoxComponent>(null);
+    const customerRef = useRef<CheckBoxComponent>(null);
+    const locationRef = useRef<CheckBoxComponent>(null);
+    const RESTART = useRef<CheckBoxComponent>(null);
     useEffect(() => {
+        // Construct the endpoint based on selected dimensions
         const dimensionsStr = selectedDimensions.join('-');
-        const apiUrl = `http://localhost:3003/${dimensionsStr ? dimensionsStr : 'country-products-quarter-year'}`;
+        const apiUrl = `http://localhost:3001/${dimensionsStr ? dimensionsStr : 'country-products-time'}`;
+
+        setCurrentUrl(apiUrl);
 
         fetch(apiUrl)
             .then(response => response.json())
@@ -31,40 +36,52 @@ const App = () => {
     };
 
     const handleCheckboxChange = () => {
-        setSelectedDimensions(() => {
-            let updatedDimensions: string[] = [];
+        const updatedDimensions: string[] = [];
 
-            const refs: { [key: string]: React.RefObject<CheckBoxComponent> } = {
-                year: yearRef,
-                quarter: quarterRef,
-                products: productsRef,
-                country: countryRef
-            };
+        const refs: { [key: string]: React.RefObject<CheckBoxComponent> } = {
+            time: timeRef,
+            products: productsRef,
+            location: locationRef,
+            store: storeRef,
+            customer: customerRef,
+            RESTART:RESTART
+        };
 
-            Object.keys(refs).forEach(dim => {
-                if (refs[dim].current?.checked) {
-                    updatedDimensions.push(dim);
-                }
-            });
-
-            return updateDimensions(updatedDimensions);
+        Object.keys(refs).forEach(dim => {
+            if (refs[dim].current?.checked) {
+                updatedDimensions.push(dim);
+            }
         });
+
+        setSelectedDimensions(updateDimensions(updatedDimensions));
     };
 
     return (
         <div className="App">
             <div className="checkbox-container">
                 <CheckBoxComponent
-                    label="Year"
-                    ref={yearRef}
+                    label="Time"
+                    ref={timeRef}
                     onChange={handleCheckboxChange}
-                    checked={selectedDimensions.includes('year')}
+                    checked={selectedDimensions.includes('time')}
                 />
                 <CheckBoxComponent
-                    label="Quarter"
-                    ref={quarterRef}
+                    label="Location"
+                    ref={locationRef}
                     onChange={handleCheckboxChange}
-                    checked={selectedDimensions.includes('quarter')}
+                    checked={selectedDimensions.includes('location')}
+                />
+                <CheckBoxComponent
+                    label="Store"
+                    ref={storeRef}
+                    onChange={handleCheckboxChange}
+                    checked={selectedDimensions.includes('store')}
+                />
+                <CheckBoxComponent
+                    label="Customer"
+                    ref={customerRef}
+                    onChange={handleCheckboxChange}
+                    checked={selectedDimensions.includes('customer')}
                 />
                 <CheckBoxComponent
                     label="Products"
@@ -73,12 +90,14 @@ const App = () => {
                     checked={selectedDimensions.includes('products')}
                 />
                 <CheckBoxComponent
-                    label="Country"
-                    ref={countryRef}
+                    label="RESTART"
+                    ref={RESTART}
                     onChange={handleCheckboxChange}
-                    checked={selectedDimensions.includes('country')}
-
+                    checked={selectedDimensions.includes('RESTART')}
                 />
+            </div>
+            <div className="current-url">
+                <strong>Current URL: </strong><span>{currentUrl}</span>
             </div>
             <PivotViewComponent
                 dataSourceSettings={{
@@ -95,7 +114,6 @@ const App = () => {
                 allowCalculatedField={true}
                 height={'500px'}
                 width={'1500px'}
-
             >
                 <Inject services={[FieldList]} />
             </PivotViewComponent>
