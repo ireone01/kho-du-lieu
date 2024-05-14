@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@syncfusion/ej2-react-buttons": "^25.2.3",
+    "@syncfusion/ej2-react-buttons": "^25.2.4",
     "@syncfusion/ej2-react-lists": "^25.2.3",
     "@syncfusion/ej2-react-pivotview": "^25.1.42",
     "@testing-library/jest-dom": "^5.17.0",

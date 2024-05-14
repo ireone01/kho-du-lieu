@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const sql = require('mssql');
 const app = express();
-const port = 3003;
+const port = 3007;
 const fs = require('fs');
 const path = require('path');
 app.use(cors());
@@ -19,13 +19,13 @@ const config = {
 };
 function aggregateDataByItemID(data){
     return data.reduce((acc, item) => {
-
+        // Tìm kiếm một sản phẩm hiện có trong mảng kết quả
         const existingProduct = acc.find(prod => prod.ItemID === item.ItemID);
         if (existingProduct) {
             existingProduct.Total_Quantity+= item.Total_Quantity;
             existingProduct.Total_Amount += item.Total_Amount;
         } else {
-
+            // Thêm sản phẩm mới vào mảng kết quả
             acc.push({
                 ItemID: item.ItemID,
                 Total_Quantity: item.Total_Quantity,
@@ -175,9 +175,9 @@ function aggregateDataByLocationItemIDTime(data){
 function aggregateDataByStore_ID(data){
     return data.reduce((acc,item)=>{
         const key =`${item.Store_ID}`;
-        const exis = acc.find(entry => entry.key === key);
+        const exis = add.find(entry => entry.key === key);
         if(exis){
-            exis.Total_Quantity += item.Total_Quantity;
+            exis.Total_Quantity+= item.Total_Quantity;
             exis.Total_Amount += item.Total_Amount;
         }else{
             acc.push({
@@ -189,16 +189,16 @@ function aggregateDataByStore_ID(data){
         return acc
     },[])
 }
-function aggregateDataByCustomerType(data){
+function aggregateDataByCustomer(data){
     return data.reduce((acc,item) => {
-        const key = `${item.CustomerType}`;
+        const key = `${item.Customer}`;
         const exis = acc.find(entry => entry.key === key);
         if(exis){
             exis.Total_Quantity+= item.Total_Quantity;
             exis.Total_Amount += item.Total_Amount;
         }else{
             acc.push({
-                CustomerType : item.CustomerType,
+                Customer : item.Customer,
                 Total_Quantity: item.Total_Quantity,
                 Total_Amount : item.Total_Amount
             });
@@ -244,16 +244,16 @@ function aggregateDataByStore_IDTime(data){
         return acc;
     },[])
 }
-function aggregateDataByCustomerTypeTime(data){
+function aggregateDataByCustomerTime(data){
     return data.reduce((acc,item)=>{
-        const key = `${item.CustomerType}-${item.Year}-${item.Quarter}`;
+        const key = `${item.Customer}-${item.Year}-${item.Quarter}`;
         const exis =acc.find(entry => entry.key ===key);
         if(exis){
             exis.Total_Quantity+=item.Total_Quantity;
             exis.Total_Amount +=item.Total_Amount;
         }else{
             acc.push({
-                CustomerType : item.CustomerType,
+                Customer : item.Customer,
                 Year : item.Year,
                 Quarter : item.Quarter,
                 Total_Quantity: item.Total_Quantity,
@@ -263,16 +263,16 @@ function aggregateDataByCustomerTypeTime(data){
         return acc;
     },[])
 }
-function aggregateDataByCustomerTypeStore_ID(data){
+function aggregateDataByCustomerStore_ID(data){
     return data.reduce((acc,item)=>{
-        const key = `${item.CustomerType}-${item.Store_ID}`;
+        const key = `${item.Customer}-${item.Store_ID}`;
         const exis =acc.find(entry => entry.key ===key);
         if(exis){
             exis.Total_Quantity+=item.Total_Quantity;
             exis.Total_Amount +=item.Total_Amount;
         }else{
             acc.push({
-                CustomerType : item.CustomerType,
+                Customer : item.Customer,
                 Store_ID : item.Store_ID,
                 Total_Quantity: item.Total_Quantity,
                 Total_Amount: item.Total_Amount
@@ -281,16 +281,16 @@ function aggregateDataByCustomerTypeStore_ID(data){
         return acc;
     },[])
 }
-function aggregateDataByCustomerTypeItemID(data){
+function aggregateDataByCustomerItemID(data){
     return data.reduce((acc,item)=>{
-        const key = `${item.CustomerType}-${item.ItemID}`;
+        const key = `${item.Customer}-${item.ItemID}`;
         const exis =acc.find(entry => entry.key ===key);
         if(exis){
             exis.Total_Quantity+=item.Total_Quantity;
             exis.Total_Amount +=item.Total_Amount;
         }else{
             acc.push({
-                CustomerType : item.CustomerType,
+                Customer : item.Customer,
                 ItemID : item.ItemID,
                 Total_Quantity: item.Total_Quantity,
                 Total_Amount: item.Total_Amount
@@ -299,16 +299,16 @@ function aggregateDataByCustomerTypeItemID(data){
         return acc;
     },[])
 }
-function aggregateDataByCustomerTypeLocation(data){
+function aggregateDataByCustomerLocation(data){
     return  data.reduce((acc,item)=>{
-        const key = `${item.CustomerType}-${item.City_name}-${item.State}`;
+        const key = `${item.Customer}-${item.City_name}-${item.State}`;
         const exis = acc.find(entry =>entry.key === key);
         if(exis){
             exis.Total_Quantity+=item.Total_Quantity;
             exis.Total_Amount += item.Total_Amount;
         }else{
             acc.push({
-                CustomerType : item.CustomerType,
+                Customer : item.Customer,
                 City_name : item.City_name,
                 State : item.State,
                 Total_Quantity: item.Total_Quantity,
@@ -337,7 +337,7 @@ function aggregateDataByLocationStore_ID(data){
         return acc;
     },[])
 }
-//CustomerType-ItemID-location-Store_ID-time
+//customer-location-ItemID-Store_ID-time
 function aggregateDataByLocationItemIDStore_ID(data){
     return data.reduce((acc,item)=>{
         const key = `${item.Store_ID}-${item.ItemID}-${item.City_name}-${item.State}`;
@@ -399,9 +399,9 @@ function aggregateDataByItemIDStore_IDTime(data){
         return acc;
     },[])
 }
-function aggregateDataByCustomerTypeStore_IDTime(data){
+function aggregateDataByCustomerStore_IDTime(data){
     return data.reduce((acc,item)=>{
-        const key = `${item.Store_ID}-${item.Year}-${item.Quarter}-${item.CustomerType}`;
+        const key = `${item.Store_ID}-${item.Year}-${item.Quarter}-${item.Customer}`;
         const exis =acc.find(entry => entry.key ===key);
         if(exis){
             exis.Total_Quantity+=item.Total_Quantity;
@@ -411,7 +411,7 @@ function aggregateDataByCustomerTypeStore_IDTime(data){
                 Year : item.Year,
                 Quarter : item.Quarter,
                 Store_ID : item.Store_ID,
-                CustomerType : item.CustomerType,
+                Customer : item.Customer,
                 Total_Quantity: item.Total_Quantity,
                 Total_Amount: item.Total_Amount
             });
@@ -419,37 +419,16 @@ function aggregateDataByCustomerTypeStore_IDTime(data){
         return acc;
     },[])
 }
-function aggregateDataByCustomerTypeItemIDStore_ID(data){
+function aggregateDataByCustomerItemIDStore_ID(data){
     return data.reduce((acc,item)=>{
-        const key =`${item.CustomerType}-${item.ItemID}-${item.Store_ID}`;
+        const key =`${item.Customer}-${item.ItemID}-${item.Store_ID}`;
         const exis = acc.find(entry => entry.key === key);
         if(exis){
             exis.Total_Quantity+=item.Total_Quantity;
             exis.Total_Amount +=item.Total_Amount;
         }else{
             acc.push({
-                CustomerType : item.CustomerType,
-                ItemID : item.ItemID,
-                Store_ID : item.Store_ID,
-                Total_Amount: item.Total_Amount,
-                Total_Quantity : item.Total_Quantity
-            });
-        }
-        return acc;
-    },[])
-}
-function aggregateDataByCustomerTypeItemIDTime(data){
-    return data.reduce((acc,item)=>{
-        const key =`${item.CustomerType}-${item.ItemID}-${item.Year}-${item.Quarter}`;
-        const exis = acc.find(entry => entry.key === key);
-        if(exis){
-            exis.Total_Quantity+=item.Total_Quantity;
-            exis.Total_Amount +=item.Total_Amount;
-        }else{
-            acc.push({
-                Year : item.Year,
-                Quarter : item.Quarter,
-                CustomerType : item.CustomerType,
+                Customer : item.Customer,
                 ItemID : item.ItemID,
                 Store_ID : item.Store_ID
             });
@@ -457,9 +436,9 @@ function aggregateDataByCustomerTypeItemIDTime(data){
         return acc;
     },[])
 }
-function aggregateDataByCustomerTypeLocationTime(data){
+function aggregateDataByCustomerItemIDTime(data){
     return data.reduce((acc,item)=>{
-        const key =`${item.CustomerType}-${item.City_name}-${item.State}-${item.Year}-${item.Quarter}`;
+        const key =`${item.Customer}-${item.ItemID}-${item.Year}-${item.Quarter}`;
         const exis = acc.find(entry => entry.key === key);
         if(exis){
             exis.Total_Quantity+=item.Total_Quantity;
@@ -468,7 +447,26 @@ function aggregateDataByCustomerTypeLocationTime(data){
             acc.push({
                 Year : item.Year,
                 Quarter : item.Quarter,
-                CustomerType : item.CustomerType,
+                Customer : item.Customer,
+                ItemID : item.ItemID,
+                Store_ID : item.Store_ID
+            });
+        }
+        return acc;
+    },[])
+}
+function aggregateDataByCustomerLocationTime(data){
+    return data.reduce((acc,item)=>{
+        const key =`${item.Customer}-${item.City_name}-${item.State}-${item.Year}-${item.Quarter}`;
+        const exis = acc.find(entry => entry.key === key);
+        if(exis){
+            exis.Total_Quantity+=item.Total_Quantity;
+            exis.Total_Amount +=item.Total_Amount;
+        }else{
+            acc.push({
+                Year : item.Year,
+                Quarter : item.Quarter,
+                Customer : item.Customer,
                 City_name : item.City_name,
                 State : item.State,
 
@@ -479,9 +477,9 @@ function aggregateDataByCustomerTypeLocationTime(data){
         return acc;
     },[])
 }
-function aggregateDataByCustomerTypeLocationStore_ID(data){
+function aggregateDataByCustomerLocationStore_ID(data){
     return data.reduce((acc,item)=>{
-        const key =`${item.CustomerType}-${item.City_name}-${item.State}-${item.Store_ID}`;
+        const key =`${item.Customer}-${item.City_name}-${item.State}-${item.Store_ID}`;
         const exis = acc.find(entry => entry.key === key);
         if(exis){
             exis.Total_Quantity+=item.Total_Quantity;
@@ -489,7 +487,7 @@ function aggregateDataByCustomerTypeLocationStore_ID(data){
         }else{
             acc.push({
                 Store_ID : item.Store_ID,
-                CustomerType : item.CustomerType,
+                Customer : item.Customer,
                 City_name : item.City_name,
                 State : item.State,
 
@@ -500,9 +498,9 @@ function aggregateDataByCustomerTypeLocationStore_ID(data){
         return acc;
     },[])
 }
-function aggregateDataByCustomerTypeLocationItemID(data){
+function aggregateDataByCustomerLocationItemID(data){
     return data.reduce((acc,item)=>{
-        const key =`${item.CustomerType}-${item.City_name}-${item.State}-${item.ItemID}`;
+        const key =`${item.Customer}-${item.City_name}-${item.State}-${item.ItemID}`;
         const exis = acc.find(entry => entry.key === key);
         if(exis){
             exis.Total_Quantity+=item.Total_Quantity;
@@ -510,7 +508,7 @@ function aggregateDataByCustomerTypeLocationItemID(data){
         }else{
             acc.push({
                 ItemID : item.ItemID,
-                CustomerType : item.CustomerType,
+                Customer : item.Customer,
                 City_name : item.City_name,
                 State : item.State,
 
@@ -544,9 +542,9 @@ function aggregateDataByLocationItemIDStore_IDTime(data){
         return acc;
     },[])
 }
-function aggregateDataByCustomerTypeItemIDStore_IDTime(data){
+function aggregateDataByCustomerItemIDStore_IDTime(data){
     return data.reduce((acc,item)=>{
-        const key =`${item.Year}-${item.Quarter}-${item.Store_ID}-${item.CustomerType}-${item.ItemID}`;
+        const key =`${item.Year}-${item.Quarter}-${item.Store_ID}-${item.Customer}-${item.ItemID}`;
         const exis = acc.find(entry => entry.key === key);
         if(exis){
             exis.Total_Quantity+=item.Total_Quantity;
@@ -557,7 +555,7 @@ function aggregateDataByCustomerTypeItemIDStore_IDTime(data){
                 Quarter : item.Quarter,
                 ItemID : item.ItemID,
                 Store_ID : item.Store_ID,
-                CustomerType : item.CustomerType,
+                Customer : item.Customer,
 
                 Total_Quantity: item.Total_Quantity,
                 Total_Amount : item.Total_Amount
@@ -566,9 +564,9 @@ function aggregateDataByCustomerTypeItemIDStore_IDTime(data){
         return acc;
     },[])
 }
-function aggregateDataByCustomerTypeLocationStore_IDTime(data){
+function aggregateDataByCustomerLocationStore_IDTime(data){
     return data.reduce((acc,item)=>{
-        const key =`${item.Year}-${item.Quarter}-${item.Store_ID}-${item.CustomerType}-${item.City_name}-${item.State}`;
+        const key =`${item.Year}-${item.Quarter}-${item.Store_ID}-${item.Customer}-${item.City_name}-${item.State}`;
         const exis = acc.find(entry => entry.key === key);
         if(exis){
             exis.Total_Quantity+=item.Total_Quantity;
@@ -580,7 +578,7 @@ function aggregateDataByCustomerTypeLocationStore_IDTime(data){
                 City_name : item.City_name,
                 State : item.State,
                 Store_ID : item.Store_ID,
-                CustomerType : item.CustomerType,
+                Customer : item.Customer,
 
                 Total_Quantity: item.Total_Quantity,
                 Total_Amount : item.Total_Amount
@@ -589,9 +587,9 @@ function aggregateDataByCustomerTypeLocationStore_IDTime(data){
         return acc;
     },[])
 }
-function aggregateDataByCustomerTypeLocationItemIDTime(data){
+function aggregateDataByCustomerLocationItemIDTime(data){
     return data.reduce((acc,item)=>{
-        const key =`${item.Year}-${item.Quarter}-${item.ItemID}-${item.CustomerType}-${item.City_name}-${item.State}`;
+        const key =`${item.Year}-${item.Quarter}-${item.ItemID}-${item.Customer}-${item.City_name}-${item.State}`;
         const exis = acc.find(entry => entry.key === key);
         if(exis){
             exis.Total_Quantity+=item.Total_Quantity;
@@ -603,7 +601,7 @@ function aggregateDataByCustomerTypeLocationItemIDTime(data){
                 City_name : item.City_name,
                 State : item.State,
                 ItemID : item.ItemID,
-                CustomerType : item.CustomerType,
+                Customer : item.Customer,
 
                 Total_Quantity: item.Total_Quantity,
                 Total_Amount : item.Total_Amount
@@ -612,9 +610,9 @@ function aggregateDataByCustomerTypeLocationItemIDTime(data){
         return acc;
     },[])
 }
-function aggregateDataByCustomerTypeLocationItemIDStore_ID(data){
+function aggregateDataByCustomerLocationItemIDStore_ID(data){
     return data.reduce((acc,item)=>{
-        const key =`${item.Store_ID}-${item.ItemID}-${item.CustomerType}-${item.City_name}-${item.State}`;
+        const key =`${item.Store_ID}-${item.ItemID}-${item.Customer}-${item.City_name}-${item.State}`;
         const exis = acc.find(entry => entry.key === key);
         if(exis){
             exis.Total_Quantity+=item.Total_Quantity;
@@ -625,7 +623,7 @@ function aggregateDataByCustomerTypeLocationItemIDStore_ID(data){
                 City_name : item.City_name,
                 State : item.State,
                 ItemID : item.ItemID,
-                CustomerType : item.CustomerType,
+                Customer : item.Customer,
 
                 Total_Quantity: item.Total_Quantity,
                 Total_Amount : item.Total_Amount
@@ -634,9 +632,9 @@ function aggregateDataByCustomerTypeLocationItemIDStore_ID(data){
         return acc;
     },[])
 }
-function aggregateDataByCustomerTypeLocationItemIDStore_IDTime(data){
+function aggregateDataByCustomerLocationItemIDStore_IDTime(data){
     return data.reduce((acc,item)=>{
-        const key =`${item.CustomerType}-${item.ItemID}-${item.Store_ID}-${item.Year}-${item.Quarter}-${item.City_name}-${item.State}`;
+        const key =`${item.Customer}-${item.ItemID}-${item.Store_ID}-${item.Year}-${item.Quarter}-${item.City_name}-${item.State}`;
         const exis = acc.find(entry => entry.key === key);
         if(exis){
             exis.Total_Quantity+=item.Total_Quantity;
@@ -647,7 +645,7 @@ function aggregateDataByCustomerTypeLocationItemIDStore_IDTime(data){
                 State : item.State,
                 Year : item.Year,
                 Quarter : item.Quarter,
-                CustomerType : item.CustomerType,
+                Customer : item.Customer,
                 ItemID : item.ItemID,
                 Store_ID : item.Store_ID,
                 Total_Quantity: item.Total_Quantity,
@@ -657,41 +655,41 @@ function aggregateDataByCustomerTypeLocationItemIDStore_IDTime(data){
         return acc;
     },[])
 }
-app.get('/CustomerType-location',async (req,res) =>{
+app.get('/customer-location',async (req,res) =>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT CustomerType,City_name,State, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerTypeLocation(result.recordset);
+        const result = await sql.query('SELECT Customer,City_name,State, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomerLocation(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
     }
 })
-app.get('/CustomerType-ItemID',async (req,res)=>{
+app.get('/customer-ItemID',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT CustomerType,ItemID, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerTypeItemID(result.recordset);
+        const result = await sql.query('SELECT Customer,ItemID, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomerItemID(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
     }
 })
-app.get('/CustomerType-Store_ID',async (req,res)=>{
+app.get('/customer-Store_ID',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT CustomerType,Store_ID, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerTypeStore_ID(result.recordset);
+        const result = await sql.query('SELECT Customer,Store_ID, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomerStore_ID(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
     }
 })
-app.get('/CustomerType-time',async (req,res)=>{
+app.get('/customer-time',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT CustomerType,Quarter,Year, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerTypeTime(result.recordset);
+        const result = await sql.query('SELECT Customer,Quarter,Year, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomerTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
@@ -700,7 +698,7 @@ app.get('/CustomerType-time',async (req,res)=>{
 app.get('/Store_ID-time',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT Store_ID,Quarter ,Year ,Total_Quantity,Total_Amount  FROM huy3');
+        const result = await sql.query('SELECT Store_ID,Quarter ,Year ,Total_Quantity,Total_Amount  FROM huy2');
         const aggregatedData = aggregateDataByStore_IDTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
@@ -710,7 +708,7 @@ app.get('/Store_ID-time',async (req,res)=>{
 app.get('/ItemID-Store_ID',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT ItemID,Store_ID, Total_Quantity, Total_Amount FROM huy3');
+        const result = await sql.query('SELECT ItemID,Store_ID, Total_Quantity, Total_Amount FROM huy2');
         const aggregatedData = aggregateDataByItemIDStore_ID(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
@@ -720,7 +718,7 @@ app.get('/ItemID-Store_ID',async (req,res)=>{
 app.get('/location-Store_ID',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT Store_ID,City_name,State, Total_Quantity, Total_Amount FROM huy3');
+        const result = await sql.query('SELECT Store_ID,City_name,State, Total_Quantity, Total_Amount FROM huy2');
         const aggregatedData = aggregateDataByLocationStore_ID(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
@@ -730,7 +728,7 @@ app.get('/location-Store_ID',async (req,res)=>{
 app.get('/location-ItemID-Store_ID',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT City_name,State,ItemID,Store_ID, Total_Quantity, Total_Amount FROM huy3');
+        const result = await sql.query('SELECT City_name,State,ItemID,Store_ID, Total_Quantity, Total_Amount FROM huy2');
         const aggregatedData = aggregateDataByLocationItemIDStore_ID(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
@@ -740,7 +738,7 @@ app.get('/location-ItemID-Store_ID',async (req,res)=>{
 app.get('/location-ItemID-time', async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT City_name,State,ItemID,Quarter,Year, Total_Quantity, Total_Amount FROM huy3');
+        const result = await sql.query('SELECT City_name,State,ItemID,Quarter,Year, Total_Quantity, Total_Amount FROM huy2');
         const aggregatedData = aggregateDataByLocationItemIDTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
@@ -750,7 +748,7 @@ app.get('/location-ItemID-time', async (req,res)=>{
 app.get('/location-Store_ID-time',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT City_name,State,Store_ID,Quarter,Year, Total_Quantity, Total_Amount FROM huy3');
+        const result = await sql.query('SELECT City_name,State,Store_ID,Quarter,Year, Total_Quantity, Total_Amount FROM huy2');
         const aggregatedData = aggregateDataByLocationStore_IDTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
@@ -760,68 +758,68 @@ app.get('/location-Store_ID-time',async (req,res)=>{
 app.get('/ItemID-Store_ID-time',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT Store_ID,ItemID,Quarter,Year, Total_Quantity, Total_Amount FROM huy3');
+        const result = await sql.query('SELECT Store_ID,ItemID,Quarter,Year, Total_Quantity, Total_Amount FROM huy2');
         const aggregatedData = aggregateDataByItemIDStore_IDTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
     }
 })
-app.get('/CustomerType-Store_ID-time',async (req,res)=>{
+app.get('/customer-Store_ID-time',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT CustomerType,Store_ID,Quarter,Year, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerTypeStore_IDTime(result.recordset);
+        const result = await sql.query('SELECT Customer,Store_ID,Quarter,Year, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomerStore_IDTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
     }
 })
-app.get('/CustomerType-ItemID-Store_ID',async (req,res)=>{
+app.get('/customer-ItemID-Store_ID',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT CustomerType,ItemID,Store_ID, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerTypeItemIDStore_ID(result.recordset);
+        const result = await sql.query('SELECT Customer,ItemID,Store_ID, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomerItemIDStore_ID(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
     }
 })
-app.get('/CustomerType-ItemID-time',async (req,res)=>{
+app.get('/customer-ItemID-time',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT CustomerType,ItemID,Quarter,Year, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerTypeItemIDTime(result.recordset);
+        const result = await sql.query('SELECT Customer,ItemID,Quarter,Year, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomerItemIDTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
     }
 })
-app.get('/CustomerType-location-time',async (req,res)=>{
+app.get('/customer-location-time',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT City_name,State,CustomerType,Quarter,Year, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerTypeLocationTime(result.recordset);
+        const result = await sql.query('SELECT City_name,State,Customer,Quarter,Year, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomerLocationTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
     }
 })
-app.get('/CustomerType-location-Store_ID',async (req,res)=>{
+app.get('/customer-location-Store_ID',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT City_name,State,CustomerType,Store_ID, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerTypeLocationStore_ID(result.recordset);
+        const result = await sql.query('SELECT City_name,State,Customer,Store_ID, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomerLocationStore_ID(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
     }
 })
-app.get('/CustomerType-ItemID-location',async (req,res)=>{
+app.get('/customer-location-ItemID',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT CustomerType,Location,ItemID, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerTypeLocationItemID(result.recordset);
+        const result = await sql.query('SELECT Customer,Location,ItemID, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomerLocationItemID(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
@@ -830,48 +828,48 @@ app.get('/CustomerType-ItemID-location',async (req,res)=>{
 app.get('/location-ItemID-Store_ID-time',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT City_name,State,ItemID,Store_ID,Quarter,Year, Total_Quantity, Total_Amount FROM huy3');
+        const result = await sql.query('SELECT City_name,State,ItemID,Store_ID,Quarter,Year, Total_Quantity, Total_Amount FROM huy2');
         const aggregatedData = aggregateDataByLocationItemIDStore_IDTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
     }
 })
-app.get('/CustomerType-ItemID-Store_ID-time',async (req,res)=>{
+app.get('/customer-ItemID-Store_ID-time',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT CustomerType,Store_ID,ItemID,Quarter,Year, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerTypeItemIDStore_IDTime(result.recordset);
+        const result = await sql.query('SELECT Customer,Store_ID,ItemID,Quarter,Year, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomerItemIDStore_IDTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
     }
 })
-app.get('/CustomerType-location-Store_ID-time',async (req,res)=>{
+app.get('/customer-location-Store_ID-time',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT City_name,State,CustomerType,Store_ID,Quarter,Year, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerTypeLocationStore_IDTime(result.recordset);
+        const result = await sql.query('SELECT City_name,State,Customer,Store_ID,Quarter,Year, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomerLocationStore_IDTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
     }
 })
-app.get('/CustomerType-ItemID-location-time',async (req,res)=>{
+app.get('/customer-location-ItemID-time',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT City_name,State,CustomerType,ItemID,Quarter,Year, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerTypeLocationItemIDTime(result.recordset);
+        const result = await sql.query('SELECT City_name,State,Customer,ItemID,Quarter,Year, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomerLocationItemIDTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
     }
 })
-app.get('/CustomerType-ItemID-location-Store_ID',async (req,res)=>{
+app.get('/customer-location-ItemID-Store_ID',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT City_name,State,CustomerType,Store_ID,ItemID, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerTypeLocationItemIDStore_ID(result.recordset);
+        const result = await sql.query('SELECT City_name,State,Customer,Store_ID,ItemID, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomerLocationItemIDStore_ID(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
@@ -880,18 +878,18 @@ app.get('/CustomerType-ItemID-location-Store_ID',async (req,res)=>{
 app.get('/Store_ID',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT Store_ID, Total_Quantity, Total_Amount FROM huy3');
+        const result = await sql.query('SELECT Store_ID, Total_Quantity, Total_Amount FROM huy2');
         const aggregatedData = aggregateDataByStore_ID(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
     }
 })
-app.get('/CustomerType',async (req,res)=>{
+app.get('/customer',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT CustomerType, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerType(result.recordset);
+        const result = await sql.query('SELECT Customer, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomer(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
@@ -900,7 +898,7 @@ app.get('/CustomerType',async (req,res)=>{
 app.get('/time',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT Year,Quarter, Total_Quantity, Total_Amount FROM huy3');
+        const result = await sql.query('SELECT Year,Quarter, Total_Quantity, Total_Amount FROM huy2');
         const aggregatedData = aggregateDataByTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
@@ -910,7 +908,7 @@ app.get('/time',async (req,res)=>{
 app.get('/ItemID',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT ItemID, Total_Quantity, Total_Amount FROM huy3');
+        const result = await sql.query('SELECT ItemID, Total_Quantity, Total_Amount FROM huy2');
         const aggregatedData = aggregateDataByItemID(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
@@ -920,7 +918,7 @@ app.get('/ItemID',async (req,res)=>{
 app.get('/location',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT City_name,State, Total_Quantity, Total_Amount FROM huy3');
+        const result = await sql.query('SELECT City_name,State, Total_Quantity, Total_Amount FROM huy2');
         const aggregatedData = aggregateDataByLocation(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
@@ -930,7 +928,7 @@ app.get('/location',async (req,res)=>{
 app.get('/location-time', async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT City_name,State,Year,Quarter, Total_Quantity, Total_Amount FROM huy3');
+        const result = await sql.query('SELECT City_name,State,Year,Quarter, Total_Quantity, Total_Amount FROM huy2');
         const aggregatedData = aggregateDataByLocationTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
@@ -940,7 +938,7 @@ app.get('/location-time', async (req,res)=>{
 app.get('/ItemID-Time',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT ItemID,Year,Quarter, Total_Quantity, Total_Amount FROM huy3');
+        const result = await sql.query('SELECT ItemID,Year,Quarter, Total_Quantity, Total_Amount FROM huy2');
         const aggregatedData = aggregateDataByItemIDTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
@@ -950,18 +948,18 @@ app.get('/ItemID-Time',async (req,res)=>{
 app.get('/location-ItemID',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT City_name,State,ItemID, Total_Quantity, Total_Amount FROM huy3');
+        const result = await sql.query('SELECT City_name,State,ItemID, Total_Quantity, Total_Amount FROM huy2');
         const aggregatedData = aggregateDataByLocationItemID(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
     }
 })
-app.get('/CustomerType-ItemID-location-Store_ID-time',async (req,res)=>{
+app.get('/CustomerType-location-ItemID-Store_ID-time',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT City_name,State,Year,Quarter,CustomerType,ItemID,Store_ID, Total_Quantity, Total_Amount FROM huy3');
-        const aggregatedData = aggregateDataByCustomerTypeLocationItemIDStore_IDTime(result.recordset);
+        const result = await sql.query('SELECT City_name,State,Year,Quarter,Customer,ItemID,Store_ID, Total_Quantity, Total_Amount FROM huy2');
+        const aggregatedData = aggregateDataByCustomerLocationItemIDStore_IDTime(result.recordset);
         res.json(aggregatedData);
     }catch (err) {
         res.status(500).send(err.message);
@@ -970,7 +968,7 @@ app.get('/CustomerType-ItemID-location-Store_ID-time',async (req,res)=>{
 app.get('/',async (req,res)=>{
     try {
         await sql.connect(config);
-        const result = await sql.query('SELECT * FROM huy3');
+        const result = await sql.query('SELECT * FROM huy2');
         res.json(result.recordset);
     }catch (err) {
         res.status(500).send(err.message);

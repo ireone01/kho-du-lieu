@@ -13,15 +13,15 @@ const App = () => {
 
     // Create refs for each CheckBoxComponent
     const timeRef = useRef<CheckBoxComponent>(null);
-    const ItemIDRef = useRef<CheckBoxComponent>(null);
-    const Store_IDRef = useRef<CheckBoxComponent>(null);
-    const CustomerTypeRef = useRef<CheckBoxComponent>(null);
+    const productsRef = useRef<CheckBoxComponent>(null);
+    const storeRef = useRef<CheckBoxComponent>(null);
+    const customerRef = useRef<CheckBoxComponent>(null);
     const locationRef = useRef<CheckBoxComponent>(null);
     const RESTART = useRef<CheckBoxComponent>(null);
     useEffect(() => {
         // Construct the endpoint based on selected dimensions
         const dimensionsStr = selectedDimensions.join('-');
-        const apiUrl = `http://localhost:3003/${dimensionsStr ? dimensionsStr : 'location'}`;
+        const apiUrl = `http://localhost:3001/${dimensionsStr ? dimensionsStr : 'location'}`;
 
         setCurrentUrl(apiUrl);
 
@@ -40,10 +40,10 @@ const App = () => {
 
         const refs: { [key: string]: React.RefObject<CheckBoxComponent> } = {
             time: timeRef,
-            ItemID: ItemIDRef,
+            products: productsRef,
             location: locationRef,
-            Store_ID: Store_IDRef,
-            CustomerType: CustomerTypeRef,
+            store: storeRef,
+            customer: customerRef,
             RESTART:RESTART
         };
 
@@ -72,22 +72,22 @@ const App = () => {
                     checked={selectedDimensions.includes('location')}
                 />
                 <CheckBoxComponent
-                    label="Store_ID"
-                    ref={Store_IDRef}
+                    label="Store"
+                    ref={storeRef}
                     onChange={handleCheckboxChange}
-                    checked={selectedDimensions.includes('Store_ID')}
+                    checked={selectedDimensions.includes('store')}
                 />
                 <CheckBoxComponent
-                    label="CustomerType"
-                    ref={CustomerTypeRef}
+                    label="Customer"
+                    ref={customerRef}
                     onChange={handleCheckboxChange}
-                    checked={selectedDimensions.includes('CustomerType')}
+                    checked={selectedDimensions.includes('customer')}
                 />
                 <CheckBoxComponent
-                    label="ItemID"
-                    ref={ItemIDRef}
+                    label="Products"
+                    ref={productsRef}
                     onChange={handleCheckboxChange}
-                    checked={selectedDimensions.includes('ItemID')}
+                    checked={selectedDimensions.includes('products')}
                 />
                 <CheckBoxComponent
                     label="RESTART"
@@ -103,12 +103,12 @@ const App = () => {
                 dataSourceSettings={{
                     dataSource: pivotData,
                     values: [
-                        { name: "Total_Amount",caption :"Amount"},
-                        { name: "Total_Quantity" ,caption: "Sold"},
+                        { name: "Sold", caption: "Units Sold" },
+                        { name: "Amount", caption: "Sold Amount" },
                     ],
-                    rows: selectedDimensions.includes('ItemID') ? [{ name: "ItemID" }] : [],
-                    columns: selectedDimensions.filter(dim => dim !== 'ItemID').map(dim => ({ name: dim.charAt(0).toUpperCase() + dim.slice(1) })),
-                    calculatedFieldSettings: [{ name: "Total", formula: '"Sum(Total_Amount)"+"Sum(Total_Quantity)"' }],
+                    rows: selectedDimensions.includes('products') ? [{ name: "Products" }] : [],
+                    columns: selectedDimensions.filter(dim => dim !== 'products').map(dim => ({ name: dim.charAt(0).toUpperCase() + dim.slice(1) })),
+                    calculatedFieldSettings: [{ name: "Total", formula: '"Sum(Amount)"+"Sum(Sold)"' }],
                 }}
                 showFieldList={true}
                 allowCalculatedField={true}
